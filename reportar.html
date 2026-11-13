@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Formulario HTML5 para reportar un animal rescatado.">
+    <title>Reportar un rescate</title>
+</head>
+<body>
+    <header>
+        <h1>Reportar un animal rescatado</h1>
+        <nav aria-label="Navegación principal">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="reportar.html" aria-current="page">Reportar un rescate</a></li>
+                <li><a href="rescates.html">Consultar rescates</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section aria-labelledby="instrucciones">
+            <h2 id="instrucciones">Formulario de registro</h2>
+            <p>Complete los campos solicitados. Los campos marcados como obligatorios deben contener información.</p>
+
+            <form action="#" method="get">
+                <fieldset>
+                    <legend>Información del animal</legend>
+
+                    <p>
+                        <label for="nombre">Nombre o identificación del animal:</label>
+                        <input type="text" id="nombre" name="nombre" minlength="2" maxlength="60" required>
+                    </p>
+
+                    <p>
+                        <label for="especie">Especie:</label>
+                        <select id="especie" name="especie" required>
+                            <option value="">Seleccione una especie</option>
+                            <option value="perro">Perro</option>
+                            <option value="gato">Gato</option>
+                            <option value="ave">Ave</option>
+                            <option value="otro">Otro</option>
+                        </select>
+                    </p>
+
+                    <p>
+                        <label for="edad">Edad aproximada (años):</label>
+                        <input type="number" id="edad" name="edad" min="0" max="100" step="1">
+                    </p>
+
+                    <p>
+                        <label for="salud">Estado de salud:</label>
+                        <select id="salud" name="salud" required>
+                            <option value="">Seleccione el estado</option>
+                            <option value="bueno">Bueno</option>
+                            <option value="regular">Regular</option>
+                            <option value="delicado">Delicado</option>
+                            <option value="critico">Crítico</option>
+                        </select>
+                    </p>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Información del rescate</legend>
+
+                    <p>
+                        <label for="fecha">Fecha del rescate:</label>
+                        <input type="date" id="fecha" name="fecha" required>
+                    </p>
+
+                    <p>
+                        <label for="ubicacion">Lugar donde fue encontrado:</label>
+                        <input type="text" id="ubicacion" name="ubicacion" minlength="3" maxlength="120" required>
+                    </p>
+
+                    <p>
+                        <label for="descripcion">Descripción del caso:</label>
+                        <textarea id="descripcion" name="descripcion" rows="5" cols="40" maxlength="500" required></textarea>
+                    </p>
+                </fieldset>
+
+                <fieldset>
+                    <legend>Datos de contacto de quien reporta</legend>
+
+                    <p>
+                        <label for="reportante">Nombre de la persona:</label>
+                        <input type="text" id="reportante" name="reportante" minlength="3" maxlength="80" required>
+                    </p>
+
+                    <p>
+                        <label for="correo">Correo electrónico:</label>
+                        <input type="email" id="correo" name="correo" autocomplete="email" required>
+                    </p>
+
+                    <p>
+                        <label for="telefono">Número de teléfono:</label>
+                        <input type="tel" id="telefono" name="telefono" pattern="[0-9+() -]{7,20}" title="Ingrese un teléfono de 7 a 20 caracteres numéricos o símbolos permitidos.">
+                    </p>
+                </fieldset>
+
+                <p>
+                    <button type="submit">Enviar reporte</button>
+                    <button type="reset">Limpiar formulario</button>
+                </p>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p><a href="index.html">Volver al inicio</a> | <a href="rescates.html">Consultar rescates</a></p>
+        <p>Proyecto académico: Sistema de Control de Rescate y Adopción Animal.</p>
+    </footer>
+</body>
+</html>

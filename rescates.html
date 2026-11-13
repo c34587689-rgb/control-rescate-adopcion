@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Listado de ejemplo de animales rescatados.">
+    <title>Listado de rescates</title>
+</head>
+<body>
+    <header>
+        <h1>Registro de animales rescatados</h1>
+        <nav aria-label="Navegación principal">
+            <ul>
+                <li><a href="index.html">Inicio</a></li>
+                <li><a href="reportar.html">Reportar un rescate</a></li>
+                <li><a href="rescates.html" aria-current="page">Consultar rescates</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section aria-labelledby="listado">
+            <h2 id="listado">Listado de rescates</h2>
+            <p>Los siguientes registros son datos demostrativos para mostrar la estructura de la tabla. No representan reportes reales.</p>
+
+            <table>
+                <caption>Ejemplo de animales registrados en el sistema</caption>
+                <thead>
+                    <tr>
+                        <th scope="col">Código</th>
+                        <th scope="col">Nombre</th>
+                        <th scope="col">Especie</th>
+                        <th scope="col">Edad</th>
+                        <th scope="col">Estado de salud</th>
+                        <th scope="col">Situación</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>RES-001</td>
+                        <td>Firulais</td>
+                        <td>Perro</td>
+                        <td>2 años</td>
+                        <td>Bueno</td>
+                        <td>Disponible</td>
+                    </tr>
+                    <tr>
+                        <td>RES-002</td>
+                        <td>Michu</td>
+                        <td>Gato</td>
+                        <td>1 año</td>
+                        <td>Regular</td>
+                        <td>En recuperación</td>
+                    </tr>
+                    <tr>
+                        <td>RES-003</td>
+                        <td>Luna</td>
+                        <td>Perro</td>
+                        <td>3 años</td>
+                        <td>Bueno</td>
+                        <td>Adoptado</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <section aria-labelledby="resumen">
+            <h2 id="resumen">Resumen de situaciones</h2>
+            <ul>
+                <li>Disponible: animal que puede iniciar un proceso de adopción.</li>
+                <li>En recuperación: animal que necesita atención y seguimiento.</li>
+                <li>Adoptado: animal que ya fue asignado a un hogar.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Registrar otro rescate</h2>
+            <p><a href="reportar.html">Abrir formulario de reporte</a></p>
+        </section>
+    </main>
+
+    <footer>
+        <p><a href="index.html">Volver al inicio</a></p>
+        <p>Proyecto académico: Sistema de Control de Rescate y Adopción Animal.</p>
+    </footer>
+</body>
+</html>
